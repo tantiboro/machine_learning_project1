@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Bootstrap Visualization Dashboard</title>
+
+  <!-- Boostrap Stylesheet -->
+  <link rel="stylesheet" href="bootstrap.min.css" media="screen">
+
+  <!-- Our own CSS stylesheet -->
+  <link rel="stylesheet" href="styles.css" media="screen">
+
+  
+<head>
+  <!-- <meta charset="UTF-8">
+  <title>ML API</title>
+<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+   -->
+
+<body>
+ <div class="login">
+	<h1>Predict Cancer Analysis Result</h1>
+  <h2>Please enter your Cell measurements below:</h2>
+  <form  method="POST">
+      {# This hidden_tag is a CSRF security feature. #}
+      {{ form.hidden_tag() }}
+      <br>
+      {{ form.cp_worst.label }} {{form.cp_worst}}
+      <br>
+      {{ form.a_worst.label}} {{form.a_worst}}
+      <br>
+      {{ form.r_worst.label}} {{form.r_worst}}
+      <br>
+      {{form.p_worst.label}}{{form.p_worst}}
+      <br>
+      {{form.cp_mean.label}}{{form.cp_mean}}
+      <br>
+      {{ form.submit() }}
+  </form>
+  
+
+ </div>
+
+
+</body>
+</html>
