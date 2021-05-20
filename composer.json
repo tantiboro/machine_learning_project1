@@ -4,14 +4,7 @@
         "size": "free"
       }
     
-    },
-    "scripts": {
-      "post-install-cmd": [
-          "ComposerScript\\Installer::postInstall"
-      ],
-      "post-package-install": [
-          "/var/www/test/composer-script/install.sh"
-      ]
-  }
+    }
+    
   }
   
